@@ -1,6 +1,7 @@
 # Restaurant Searcher
 
 端末の位置情報を利用して、現在地付近の飲食店を検索する web アプリケーション  
+[https://restaurantsearcher.herokuapp.com](https://restaurantsearcher.herokuapp.com) で公開中  
 
 ## 前提条件
 
