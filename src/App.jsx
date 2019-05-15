@@ -47,6 +47,12 @@ const styles = theme => ({
   content: {
     flexGrow: 1,
     padding: 0 //theme.spacing.unit * 3
+  },
+  gnaviCredit: {
+    position: "absolute",
+    bottom: 0,
+    width: "100%",
+    textAlign: "center"
   }
 });
 
@@ -104,6 +110,21 @@ class App extends React.Component {
           setSearchConditions={this.setSearchConditions}
         />
         <Divider />
+        {/* ぐるなび */}
+        <a
+          href="https://api.gnavi.co.jp/api/scope/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes.gnaviCredit}
+        >
+          <img
+            src="https://api.gnavi.co.jp/api/img/credit/api_225_100.gif"
+            width="225"
+            height="100"
+            border="0"
+            alt="グルメ情報検索サイト　ぐるなび"
+          />
+        </a>
       </div>
     );
 

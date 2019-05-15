@@ -82,7 +82,7 @@ class RestaurantList extends React.Component {
             {json.hit_per_page * json.page_offset < json.total_hit_count && (
               // 検索結果が全て表示されていない場合
               <Button fullWidth onClick={this.searchMoreClick}>
-                <h4>さらに表示</h4>
+                <h3>さらに表示</h3>
               </Button>
             )}
           </div>

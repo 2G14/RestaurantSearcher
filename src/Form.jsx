@@ -44,6 +44,7 @@ class Form extends React.Component {
       console.log(conditions);
       request({ ...conditions }, json => {
         this.props.setJsonFunc(json);
+        window.scrollTo(0, 0);
         console.log(JSON.stringify(json));
       });
     });
