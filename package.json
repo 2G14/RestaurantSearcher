@@ -5,7 +5,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "yarn build && yarn http",
+    "test": "react-scripts start",
     "build": "react-scripts build",
     "http": "node ./server/http_server.js",
     "https": "node ./server/https_server.js"
