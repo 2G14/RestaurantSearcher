@@ -47,7 +47,7 @@ class RestaurantList extends React.Component {
       json.rest = json.rest.concat(newJson.rest);
       json.page_offset++;
       this.props.setJsonFunc(json);
-      console.log(JSON.stringify(json));
+//      console.log(JSON.stringify(json));
     });
   }
   /**
