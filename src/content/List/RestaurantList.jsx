@@ -76,7 +76,7 @@ class RestaurantList extends React.Component {
           <div>
             <List className={classes.list}>
               {json.rest.map((rest, index) => (
-                <RestaurantListItem rest={rest} key={index} />
+                <RestaurantListItem rest={rest} key={rest.id} />
               ))}
             </List>
             {json.hit_per_page * json.page_offset < json.total_hit_count && (
