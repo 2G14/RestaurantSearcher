@@ -107,8 +107,7 @@ class RestaurantListItem extends React.Component {
               )}
               {rest.tel && (
                 <Typography paragraph>
-                  電話番号:{" "}
-                  <a href={`tel:${rest.tel}`}>{rest.tel}</a>
+                  電話番号: <a href={`tel:${rest.tel}`}>{rest.tel}</a>
                 </Typography>
               )}
               {rest.opentime && (
@@ -127,6 +126,11 @@ class RestaurantListItem extends React.Component {
                   電子マネー: {rest.e_money.replace(/,/g, ", ")}
                 </Typography>
               )}
+              <Typography align="right">
+                <a href={rest.url} target="_blank" rel="noopener noreferrer">
+                  ぐるなび店舗ページはこちら
+                </a>
+              </Typography>
             </CardContent>
           </Collapse>
         </Card>
