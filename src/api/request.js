@@ -18,14 +18,12 @@ export default function request(conditions, cb) {
       return response.json();
     })
     .then(json => {
-      console.log(JSON.stringify(json));
       if (json.error) {
         throw new Error(json.error[0].message);
       }
       return cb(json);
     })
     .catch(err => {
-      console.log(err);
       alert(err.message);
     });
 }
